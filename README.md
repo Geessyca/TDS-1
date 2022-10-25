@@ -7,10 +7,13 @@
 </h4>
 
 <h4 align="left">
-  Projeto: Calculadora básica em python - <a href="https://github.com/Geessyca/TDS-1/blob/main/refatoracao-calculadora.md"/>Refatoração</a> 
+  Projeto: Calculadora básica em python - <a href=/refatoracao-calculadora.md"/>Refatoração</a> 
 </h4>
 <h4 align="left">
-  Projeto: Jogo pedra, papel e tesoura em python - <a href="https://github.com/Geessyca/TDS-1/blob/main/refatoracao-jogo.md"/>Refatoração</a> 
+  Projeto: Jogo pedra, papel e tesoura em python - <a href="/refatoracao-jogo.md"/>Refatoração</a> 
+</h4>
+<h4 align="left">
+  Projeto: Teste de eficiencia entre dois metodos de ordenação em java - <a href="/refatoracao-testes.md"/>Refatoração</a> 
 </h4>
 </br>
 
