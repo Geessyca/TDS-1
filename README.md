@@ -15,6 +15,9 @@
 <h4 align="left">
   Projeto: Teste de eficiencia entre dois metodos de ordenação em java - <a href="/refatoracao-testes.md"/>Refatoração</a> 
 </h4>
+<h4 align="left">
+  Projeto: Lista de exercicios em java - 1 - <a href="/refatoracao-lista-1.md"/>Refatoração</a> 
+</h4>
 </br>
 
 
