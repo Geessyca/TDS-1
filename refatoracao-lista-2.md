@@ -10,6 +10,8 @@
 ✔️ Todos os arquivos foram renomeados para nomes relacionados as suas devidas funções </br></h4>
 <h4>
 ✔️ Renomeação das variáveis para nomeclaturas mais claras das suas responsabilidades </br></h4>
+<h4>
+✔️ Extrações de funções que são utilizadas mais de uma vez </br></h4>
 </br>
 
 </br>
