@@ -284,9 +284,11 @@ public class BankAccountInfo {
 	
 }
 ```
+
 </br>
 <h4>Foi criado uma classe com o tipo de variável que um usuario possuia ↷</h4></br>
 </br>
+
 ```
 public class UserBankAccount {
 	 String name;
