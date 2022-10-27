@@ -7,6 +7,32 @@
 </h4>
 </br>
 <h4>✔️ Todos os arquivos que ultizam o input de dados por parte de usuario foi criado a class GetUserUtils para evitar duplicação de codigo</h4></br>
+
+```
+public class GetUserUtils {
+	 private static Scanner readUser = new Scanner(System.in);;
+	 public String getText(String textDisplayed) {
+		  System.out.printf(textDisplayed);
+	      return readUser.nextLine();
+	 }
+	 
+	 public static float getNumberFloat(String textDisplayed) {
+		  System.out.printf(textDisplayed);
+	      return readUser.nextFloat();
+	 }
+	 
+	 public static int getNumberInt(String textDisplayed) {
+		  System.out.printf(textDisplayed);
+	      return readUser.nextInt();
+	 }
+	 
+	 public static double getNumberDouble(String textDisplayed) {
+		  System.out.printf(textDisplayed);
+	      return readUser.nextDouble();
+	 }
+}
+```
+
 <h4>
 ✔️ Todos os arquivos foram renomeados para nomes relacionados as suas devidas funções </br></h4>
 <h4>
