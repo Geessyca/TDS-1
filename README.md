@@ -21,6 +21,21 @@
 <h4 align="left">
   Projeto: Lista de exercicios em java - 2 - <a href="/refatoracao-lista-2.md"/>Refatoração</a> 
 </h4>
+    <h4 align="left">
+  Projeto: Lista de exercicios em java - 3 - <a href="/refatoracao-lista-3.md"/>Refatoração</a> 
+</h4>
+<h4 align="left">
+  Projeto:  Conta Bancária em java - <a href="/refatoracao-lista-4.md"/>Refatoração</a> 
+</h4>
+    <h4 align="left">
+  Projeto: Sons de cada tipo de animal em java - <a href="/refatoracao-lista-5.md"/>Refatoração</a> 
+</h4>
+<h4 align="left">
+  Projeto: Sistema de gestão de vendas - <a href="/refatoracao-lista-5-2.md"/>Refatoração</a> 
+</h4>
+<h4 align="left">
+  Projeto: Sistema de cadastro de cliente em java - <a href="/refatoracao-lista-6.md"/>Refatoração</a> 
+</h4>
 </br>
 
 
@@ -28,7 +43,7 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/geessyca">
+      <a href="[https://github.com/geessyca](https://www.linkedin.com/in/geessyca/)">
         <img src="https://avatars.githubusercontent.com/u/72661229?v=4" width="100px;" alt="Icon GitHub"/><br>
         <sub>
           <b>Gessyca Moreira</b>
