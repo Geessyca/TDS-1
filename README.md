@@ -25,17 +25,14 @@
   Projeto: Lista de exercicios em java - 3 - <a href="/refatoracao-lista-3.md"/>Refatoração</a> 
 </h4>
 <h4 align="left">
+   Bad-Smell:  Duplicação - Nomeclatura - Comentários ->
   Projeto:  Conta Bancária em java - <a href="/refatoracao-lista-4.md"/>Refatoração</a> 
 </h4>
-    <h4 align="left">
-  Projeto: Sons de cada tipo de animal em java - <a href="/refatoracao-lista-5.md"/>Refatoração</a> 
+<h4 align="left">
+  Bad-Smell: Nomeclatura -> Projeto: Sistema de gestão de vendas - <a href="/refatoracao-lista-5-2.md"/>Refatoração</a> 
 </h4>
 <h4 align="left">
-  Projeto: Sistema de gestão de vendas - <a href="/refatoracao-lista-5-2.md"/>Refatoração</a> 
-</h4>
-<h4 align="left">
-  <h5>Bad-Smell: Extração de metodo - Nomeclatura</br></h5>
-  Projeto: Sistema de cadastro de cliente em java - <a href="/refatoracao-lista-6.md"/>Refatoração</a> 
+  Bad-Smell: Extração de metodo - Nomeclatura -> Projeto: Sistema de cadastro de cliente em java - <a href="/refatoracao-lista-6.md"/>Refatoração</a> 
 </h4>
 </br>
 
