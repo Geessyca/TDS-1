@@ -6,15 +6,11 @@
    Projeto: Conta Bancária em java - <a href="[ ](https://github.com/Geessyca/POO-List4)"/>Repositório</a> 
 </h4>
 </br>
-<h4>✔️ Todos as classes que possuiam o mesmo escopo foi convertido em somente uma classe para evitar duplicação de codigo</h4></br>
-<h4>
-✔️ Todos os arquivos foram renomeados para nomes relacionados as suas devidas funções </br></h4>
-<h4>
-✔️ Renomeação das variáveis para nomeclaturas mais claras das suas responsabilidades </br></h4>
-</br>
+  <h5>Bad-Smell: Duplicação - Nomeclatura - Comentários</br></h5>
+<h4>✔️ O codigo possuia 4 classes que tinha a mesma funcionalidade, no processo de refatoração essas 4 classes se tornaram somente uma. Além disso toda a nomeclatura das classes foram refatoradas por meio da renomeção</h4></br>
 
 </br>
-<h4>Na Classe Main foi realizados as seguintes refatorações   ↷</h4></br>
+<h4>Na Classe Main onde foi realizado a remoção dos comentatarios, a exclusão das classes dublicadas e a renomeação de toda a nomeclatura↷</h4></br>
 </br>
 <h4>
 ❌ Código antes da refatoração</br></h4>
@@ -72,7 +68,7 @@ public static void main(String[] args) {
 }
 ```
 </br>
-<h4>Na classe Que tinha como função trazer a data de abertura da conta foi realizados as seguintes refatorações   ↷</h4></br>
+<h4>Na classe que tinha como função trazer a data de abertura da conta foi realizados somente a refatoração de renomeação ↷</h4></br>
 </br>
 <h4>
 ❌ Código antes da refatoração</br></h4>
@@ -129,7 +125,7 @@ public class Date {
 }
 ```
 </br>
-<h4>As classes question2.java - question4.java - question5.java - question6.java, foram convertida em uma só classe onde foi realizados as seguintes refatorações   ↷</h4></br>
+<h4>As classes question2.java - question4.java - question5.java - question6.java, foram convertida em uma só classe onde foi realizados a refatoração de renomeação↷</h4></br>
 </br>
 <h4>
 ❌ Código antes da refatoração</br></h4>
@@ -283,19 +279,4 @@ public class BankAccountInfo {
 	}
 	
 }
-```
-
-</br>
-<h4>Foi criado uma classe com o tipo de variável que um usuario possuia ↷</h4></br>
-</br>
-
-```
-public class UserBankAccount {
-	 String name;
-	 int number;
-	 String bankBranch;
-	 double balance;
-	 Date openingDate = new Date(0,0,0);
-}
-
 ```
