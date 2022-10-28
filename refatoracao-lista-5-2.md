@@ -7,9 +7,8 @@
 </h4>
 </br>
 <h4>
-✔️ Todos os arquivos foram renomeados para nomes relacionados as suas devidas funções </br></h4>
-<h4>
-✔️ Renomeação das variáveis para nomeclaturas mais claras das suas responsabilidades </br></h4>
+	  <h5>Bad-Smell: Nomeclatura</br></h5>
+✔️ Durante a criação dessa atividade a nomeclatura nãoera o principal objetivo, por isso foi aplicado a refatoração por meio da renomeação das mesmas </br></h4>
 </br>
 
 </br>
