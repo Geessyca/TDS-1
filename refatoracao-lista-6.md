@@ -6,6 +6,7 @@
    Projeto: Sistema de cadastro de cliente em java - <a href="https://github.com/Geessyca/POO-List6"/>Repositório</a> 
 </h4>
 </br>
+<h5>Bad-Smell: Extração de metodo</br>Debito tecnio: Nomeclatura</h5>
 <h4>✔️ Todos os arquivos que ultizam algum elemento da biblioteca javax.swing foi criado a class SwingUtils para evitar duplicação de codigo</h4></br>
 
 ```
@@ -49,7 +50,7 @@ public class SwingUtils {
 </br>
 
 </br>
-<h4>Na classe Main foi realizados as seguintes refatorações   ↷</h4></br>
+<h4>Para as seguintes classes foi aplicado a refaração de extração de metodo na criação dos JButton / Botões passando a ser utilizado da nova classe SwingUtils.<br/>Toda  a nomeclatura presente na classe foi refatorada por renomeação já que no momento de criação da classe a mesma não era o principal objetivo gerando assim um débito técnico. </h4></br>
 </br>
 <h4>
 ❌ Código antes da refatoração</br></h4>
@@ -191,141 +192,6 @@ public class Main extends JFrame{
 ```
 
 </br>
-<h4>Na classe Client foi realizados as seguintes refatorações   ↷</h4></br>
-</br>
-<h4>
-❌ Código antes da refatoração</br></h4>
-
-```
-public abstract class Cliente {
-    private long codigo;
-
-    public Cliente(long codigo) {
-        this.codigo = codigo;
-    }
-        public long getCodigo() {
-            return codigo;
-        }
-        public void setCodigo(long codigo) {
-            this.codigo = codigo;
-        }
-        public abstract String todosDados();
-        
-}
-
-```
-
-<h4>
-✔️ Código após da refatoração</br></h4>
-
-```
-public abstract class Client {
-    private long clientCode;
-
-    public Client(long clientCode) {
-        this.clientCode = clientCode;
-    }
-    public long getClientCode() {
-        return clientCode;
-    }
-    public void setClientCode(long clientCode) {
-    	this.clientCode = clientCode;
-    }
-	public abstract String allCustomerData();
-        
-}
-```
-
-</br>
-<h4>As sub-classes que herdaram a classe Client foi realizados as seguintes refatorações   ↷</h4></br>
-</br>
-<h4>
-❌ Código antes da refatoração</br></h4>
-
-```
-public class PF extends Cliente{
-
-    public PF(double alt,double larg) {
-    	this.alt = alt;
-        this.larg = larg;
-    }
-    public double getCpf() {
-        return cpf;
-    }
-    
-    public String todosDados(){
-        return "Codigo:"+getCodigo() + " CPF:" + getCpf();
-    }
-}
---------------------------------------------------------------
-public class PJ extends Cliente{
-    private String cnpj;
-
-    public PJ(long codigo,String cnpj) {
-        super(codigo);
-        this.cnpj = cnpj;
-    }
-
-    public String getCnpj() {
-        return cnpj;
-    }
-    public void setCnpj(String cnpj) {
-        this.cnpj = cnpj;
-    }
-    public String todosDados(){
-        return "Codigo:"+getCodigo() + "CNPJ" + getCnpj();
-   
-}
-}
-
-```
-
-<h4>
-✔️ Código após da refatoração</br></h4>
-
-```
-public class PhysicalPerson extends Client{
-	private String cpf;
-
-	public PhysicalPerson(long codigo,String cpf) {
-		 super(codigo);
-	     this.cpf = cpf;
-    }
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-    public String todosDados(){
-        return "Codigo:"+getClientCode() + " CPF:" + getCpf();
-    }
-}
---------------------------------------------------------------
-public  class LegalPerson extends Client{
-    private String cnpj;
-
-    public LegalPerson(long codigo,String cnpj) {
-        super(codigo);
-        this.cnpj = cnpj;
-    }
-
-    public String getCnpj() {
-        return cnpj;
-    }
-    public void setCnpj(String cnpj) {
-        this.cnpj = cnpj;
-    }
-    public String todosDados(){
-        return "Codigo:"+getClientCode() + "CNPJ" + getCnpj();
-   
-    }
-}
-```
-
-</br>
-<h4>Na classe de registro de pessoa fisica foi realizados as seguintes refatorações   ↷</h4></br>
-</br>
 <h4>
 ❌ Código antes da refatoração</br></h4>
 
@@ -449,8 +315,6 @@ public class RegisterPhysicalPerson extends JDialog{
 ```
 
 </br>
-<h4>Na classe de registro de pessoa juridica foi realizados as seguintes refatorações   ↷</h4></br>
-</br>
 <h4>
 ❌ Código antes da refatoração</br></h4>
 
@@ -572,8 +436,6 @@ public class RegisterLegalPerson extends JDialog{
 ```
 
 </br>
-<h4>Na classe de exibição dos dados foi realizados as seguintes refatorações   ↷</h4></br>
-</br>
 <h4>
 ❌ Código antes da refatoração</br></h4>
 
@@ -660,5 +522,138 @@ public class ShowData extends JDialog{
 			}
 		}
 	}
+}
+```
+
+</br>
+<h4>Na classe Client e suas sub-classes foi aplicado somente a refaração de renomeção das nomeclaturas presentes</h4></br>
+</br>
+<h4>
+❌ Código antes da refatoração</br></h4>
+
+```
+public abstract class Cliente {
+    private long codigo;
+
+    public Cliente(long codigo) {
+        this.codigo = codigo;
+    }
+        public long getCodigo() {
+            return codigo;
+        }
+        public void setCodigo(long codigo) {
+            this.codigo = codigo;
+        }
+        public abstract String todosDados();
+        
+}
+
+```
+
+<h4>
+✔️ Código após da refatoração</br></h4>
+
+```
+public abstract class Client {
+    private long clientCode;
+
+    public Client(long clientCode) {
+        this.clientCode = clientCode;
+    }
+    public long getClientCode() {
+        return clientCode;
+    }
+    public void setClientCode(long clientCode) {
+    	this.clientCode = clientCode;
+    }
+	public abstract String allCustomerData();
+        
+}
+```
+
+</br>
+<h4>As sub-classes da classe Client:</h4></br>
+</br>
+<h4>
+❌ Código antes da refatoração</br></h4>
+
+```
+public class PF extends Cliente{
+
+    public PF(double alt,double larg) {
+    	this.alt = alt;
+        this.larg = larg;
+    }
+    public double getCpf() {
+        return cpf;
+    }
+    
+    public String todosDados(){
+        return "Codigo:"+getCodigo() + " CPF:" + getCpf();
+    }
+}
+--------------------------------------------------------------
+public class PJ extends Cliente{
+    private String cnpj;
+
+    public PJ(long codigo,String cnpj) {
+        super(codigo);
+        this.cnpj = cnpj;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+    public String todosDados(){
+        return "Codigo:"+getCodigo() + "CNPJ" + getCnpj();
+   
+}
+}
+
+```
+
+<h4>
+✔️ Código após da refatoração</br></h4>
+
+```
+public class PhysicalPerson extends Client{
+	private String cpf;
+
+	public PhysicalPerson(long codigo,String cpf) {
+		 super(codigo);
+	     this.cpf = cpf;
+    }
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+    public String todosDados(){
+        return "Codigo:"+getClientCode() + " CPF:" + getCpf();
+    }
+}
+--------------------------------------------------------------
+public  class LegalPerson extends Client{
+    private String cnpj;
+
+    public LegalPerson(long codigo,String cnpj) {
+        super(codigo);
+        this.cnpj = cnpj;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+    public String todosDados(){
+        return "Codigo:"+getClientCode() + "CNPJ" + getCnpj();
+   
+    }
 }
 ```
