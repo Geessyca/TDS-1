@@ -7,7 +7,7 @@
 </h4>
 
 <h4 align="left">
-  Projeto: Calculadora básica em python - <a href=/refatoracao-calculadora.md"/>Refatoração</a> 
+  Projeto: Calculadora básica em python - <a href="/refatoracao-calculadora.md"/>Refatoração</a> 
 </h4>
 <h4 align="left">
   Projeto: Jogo pedra, papel e tesoura em python - <a href="/refatoracao-jogo.md"/>Refatoração</a> 
@@ -34,6 +34,7 @@
   Projeto: Sistema de gestão de vendas - <a href="/refatoracao-lista-5-2.md"/>Refatoração</a> 
 </h4>
 <h4 align="left">
+  <h5>Bad-Smell: Extração de metodo - Nomeclatura</br></h5>
   Projeto: Sistema de cadastro de cliente em java - <a href="/refatoracao-lista-6.md"/>Refatoração</a> 
 </h4>
 </br>
