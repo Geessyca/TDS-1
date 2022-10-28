@@ -3,7 +3,7 @@
 </h2>
 
 <h4 align="center">
-   Projeto: Teste de eficiencia entre dois metodos de ordenção em java - <a href="[https://github.com/Geessyca/Jogo-Pedra-Papel-e-Tesoura--em-Python](https://github.com/Geessyca/-tests-to-verify-the-efficiency-of-sorting-values)"/>Repositório</a> 
+   Projeto: Teste de eficiencia entre dois metodos de ordenção em java - <a href="https://github.com/Geessyca/-tests-to-verify-the-efficiency-of-sorting-values"/>Repositório</a> 
 </h4>
 </br>
 <h4>Arquivo de geração de um array inteiro de numeros aleatórios, que foi criado com o intuito de não gerar duplicação do metódo e foi realizados as seguintes refatorações   ↷</h4></br>
