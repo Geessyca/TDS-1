@@ -6,7 +6,7 @@
    Projeto: Sistema de cadastro de cliente em java - <a href="https://github.com/Geessyca/POO-List6"/>Repositório</a> 
 </h4>
 </br>
-<h5>Bad-Smell: Extração de metodo</br>Debito tecnio: Nomeclatura</h5>
+  <h5>Bad-Smell: Extração de metodo - Nomeclatura</br></h5>
 <h4>✔️ Todos os arquivos que ultizam algum elemento da biblioteca javax.swing foi criado a class SwingUtils para evitar duplicação de codigo</h4></br>
 
 ```
